@@ -6,6 +6,9 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+/**
+ * Тесты для первых двух заданий.
+ */
 public class TestTaskOne {
 
     @Test

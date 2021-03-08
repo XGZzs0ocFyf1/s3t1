@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
+//файл для заданий номер 1 и 2
 public class Task1and2<T extends Object> {
 
 

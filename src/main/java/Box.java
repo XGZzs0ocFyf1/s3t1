@@ -5,10 +5,10 @@ import java.util.List;
 //3. Большая задача:
 public class Box<T extends Fruit> {
 
-//    c. Для хранения фруктов внутри коробки можете использовать ArrayList;
+    //    c. Для хранения фруктов внутри коробки можете использовать ArrayList;
     private List<T> storage = new ArrayList<>();
 
-//    g. Не забываем про метод добавления фрукта в коробку.
+    //    g. Не забываем про метод добавления фрукта в коробку.
     public void addFruit(T fruit) {
         this.storage.add(fruit);
     }
@@ -17,7 +17,7 @@ public class Box<T extends Fruit> {
         return storage;
     }
 
-//    Сделать метод getWeight() который высчитывает вес коробки, зная количество фруктов и вес одного
+    //    Сделать метод getWeight() который высчитывает вес коробки, зная количество фруктов и вес одного
 //    фрукта(вес яблока - 1.0f, апельсина - 1.5f, не важно в каких это единицах);
     public float getWeight() {
         int fruitsInBox = storage.size();
@@ -40,8 +40,6 @@ public class Box<T extends Fruit> {
     }
 
 
-
-
     //  Внутри класса коробка сделать метод compare, который позволяет
     //  сравнить текущую коробку с той, которую подадут в compare в качестве параметра,
     //  true - если их веса равны, false в противном случае(коробки с яблоками мы можем
@@ -50,8 +48,4 @@ public class Box<T extends Fruit> {
         return getWeight() == o.getWeight();
     }
 
-    public static void main(String[] args) {
-
-        System.out.println(new ArrayList<>().size());
-    }
 }
